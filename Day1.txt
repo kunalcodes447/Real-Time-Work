@@ -1,0 +1,448 @@
+// ===============================
+// CORE STEREOTYPE ANNOTATIONS
+// ===============================
+
+@Component
+// Generic Spring-managed bean.
+
+@Service
+// Service layer bean for business logic.
+
+@Repository
+// DAO layer bean with database exception handling.
+
+@Controller
+// Marks a Spring MVC controller.
+
+@RestController
+// Combines @Controller + @ResponseBody for REST APIs.
+
+@Configuration
+// Defines a configuration class.
+
+@Bean
+// Creates and manages a bean manually.
+
+@ComponentScan
+// Scans packages for Spring components.
+
+@Autowired
+// Automatically injects dependencies.
+
+@Qualifier
+// Specifies which bean to inject when multiple exist.
+
+@Primary
+// Sets a bean as default choice.
+
+@Lazy
+// Loads bean only when needed.
+
+@Scope
+// Defines bean scope (singleton, prototype, etc.).
+
+@Value
+// Injects values from properties file.
+
+@PropertySource
+// Loads external properties file.
+
+@DependsOn
+// Ensures one bean initializes before another.
+
+@Profile
+// Loads beans for specific environments.
+
+@PostConstruct
+// Executes method after bean creation.
+
+@PreDestroy
+// Executes method before bean destruction.
+
+
+// ===============================
+// SPRING BOOT ANNOTATIONS
+// ===============================
+
+@SpringBootApplication
+// Main Spring Boot annotation.
+
+@EnableAutoConfiguration
+// Enables automatic configuration.
+
+@SpringBootConfiguration
+// Specialized @Configuration for Spring Boot.
+
+@ConfigurationProperties
+// Maps properties to Java class.
+
+@EnableConfigurationProperties
+// Enables configuration properties support.
+
+
+// ===============================
+// WEB / MVC ANNOTATIONS
+// ===============================
+
+@RequestMapping
+// Maps web requests to methods/classes.
+
+@GetMapping
+// Handles HTTP GET requests.
+
+@PostMapping
+// Handles HTTP POST requests.
+
+@PutMapping
+// Handles HTTP PUT requests.
+
+@DeleteMapping
+// Handles HTTP DELETE requests.
+
+@PatchMapping
+// Handles HTTP PATCH requests.
+
+@PathVariable
+// Extracts value from URL path.
+
+@RequestParam
+// Reads query parameters.
+
+@RequestBody
+// Converts request body to Java object.
+
+@ResponseBody
+// Sends method return value as HTTP response.
+
+@RequestHeader
+// Reads HTTP headers.
+
+@CookieValue
+// Reads cookie values.
+
+@ModelAttribute
+// Binds form data to object.
+
+@ResponseStatus
+// Sets HTTP response status.
+
+@CrossOrigin
+// Enables CORS support.
+
+@ControllerAdvice
+// Global exception handling class.
+
+@RestControllerAdvice
+// Global REST exception handling.
+
+@ExceptionHandler
+// Handles specific exceptions.
+
+@InitBinder
+// Customizes request parameter binding.
+
+
+// ===============================
+// DATABASE / JPA ANNOTATIONS
+// ===============================
+
+@Entity
+// Marks a class as database entity.
+
+@Table
+// Specifies table name.
+
+@Id
+// Defines primary key.
+
+@GeneratedValue
+// Auto-generates primary key values.
+
+@Column
+// Maps field to table column.
+
+@Transient
+// Ignores field from database mapping.
+
+@Lob
+// Stores large objects (BLOB/CLOB).
+
+@Enumerated
+// Stores enum values.
+
+@Temporal
+// Maps date/time values.
+
+@OneToOne
+// One-to-one relationship.
+
+@OneToMany
+// One-to-many relationship.
+
+@ManyToOne
+// Many-to-one relationship.
+
+@ManyToMany
+// Many-to-many relationship.
+
+@JoinColumn
+// Defines foreign key column.
+
+@JoinTable
+// Defines join table.
+
+@Embeddable
+// Marks reusable embedded class.
+
+@Embedded
+// Embeds another class.
+
+@EmbeddedId
+// Composite primary key.
+
+@Inheritance
+// Defines inheritance strategy.
+
+@DiscriminatorColumn
+// Column for inheritance type.
+
+@DiscriminatorValue
+// Value for subclass identification.
+
+
+// ===============================
+// SPRING DATA JPA ANNOTATIONS
+// ===============================
+
+@EnableJpaRepositories
+// Enables JPA repositories.
+
+@Transactional
+// Defines transaction boundaries.
+
+@Query
+// Custom JPQL/SQL query.
+
+@Modifying
+// Marks update/delete query.
+
+@Procedure
+// Calls stored procedure.
+
+@Param
+// Passes parameters to queries.
+
+
+// ===============================
+// VALIDATION ANNOTATIONS
+// ===============================
+
+@NotNull
+// Value cannot be null.
+
+@NotEmpty
+// Collection/string cannot be empty.
+
+@NotBlank
+// String cannot be blank.
+
+@Size
+// Defines size limits.
+
+@Min
+// Minimum numeric value.
+
+@Max
+// Maximum numeric value.
+
+@Positive
+// Value must be positive.
+
+@Negative
+// Value must be negative.
+
+@Email
+// Validates email format.
+
+@Pattern
+// Validates regex pattern.
+
+@Past
+// Date must be in past.
+
+@Future
+// Date must be in future.
+
+@Valid
+// Triggers nested validation.
+
+
+// ===============================
+// SECURITY ANNOTATIONS
+// ===============================
+
+@EnableWebSecurity
+// Enables Spring Security.
+
+@PreAuthorize
+// Method-level authorization check.
+
+@PostAuthorize
+// Authorization after method execution.
+
+@Secured
+// Role-based method security.
+
+@RolesAllowed
+// Restricts access by roles.
+
+
+// ===============================
+// ASPECT ORIENTED PROGRAMMING (AOP)
+// ===============================
+
+@Aspect
+// Marks aspect class.
+
+@Before
+// Runs before method execution.
+
+@After
+// Runs after method execution.
+
+@AfterReturning
+// Runs after successful execution.
+
+@AfterThrowing
+// Runs after exception occurs.
+
+@Around
+// Surrounds method execution.
+
+@Pointcut
+// Defines reusable pointcut.
+
+
+// ===============================
+// TESTING ANNOTATIONS
+// ===============================
+
+@SpringBootTest
+// Loads full Spring Boot context.
+
+@WebMvcTest
+// Tests only MVC layer.
+
+@DataJpaTest
+// Tests JPA repositories.
+
+@MockBean
+// Adds mock bean to Spring context.
+
+@Test
+// Marks test method.
+
+@BeforeEach
+// Runs before each test.
+
+@AfterEach
+// Runs after each test.
+
+
+// ===============================
+// SCHEDULING & ASYNC
+// ===============================
+
+@EnableScheduling
+// Enables scheduling support.
+
+@Scheduled
+// Runs method on schedule.
+
+@EnableAsync
+// Enables async processing.
+
+@Async
+// Runs method asynchronously.
+
+
+// ===============================
+// CACHING
+// ===============================
+
+@EnableCaching
+// Enables caching support.
+
+@Cacheable
+// Caches method result.
+
+@CachePut
+// Updates cache.
+
+@CacheEvict
+// Removes cache entry.
+
+
+// ===============================
+// MICROSERVICES / CLOUD
+// ===============================
+
+@EnableDiscoveryClient
+// Registers service with discovery server.
+
+@FeignClient
+// Declares Feign REST client.
+
+@EnableFeignClients
+// Enables Feign clients.
+
+@LoadBalanced
+// Enables client-side load balancing.
+
+@HystrixCommand
+// Circuit breaker support.
+
+
+// ===============================
+// MESSAGING / KAFKA
+// ===============================
+
+@EnableKafka
+// Enables Kafka support.
+
+@KafkaListener
+// Consumes Kafka messages.
+
+
+// ===============================
+// COMMONLY USED JACKSON ANNOTATIONS
+// ===============================
+
+@JsonIgnore
+// Ignores field in JSON.
+
+@JsonProperty
+// Defines custom JSON property name.
+
+@JsonFormat
+// Formats JSON output.
+
+@JsonInclude
+// Includes/excludes null fields.
+
+
+// ===============================
+// IMPORTANT JAVA ANNOTATIONS
+// ===============================
+
+@Override
+// Overrides parent method.
+
+@Deprecated
+// Marks deprecated element.
+
+@SuppressWarnings
+// Suppresses compiler warnings.
+
+@FunctionalInterface
+// Marks functional interface.
