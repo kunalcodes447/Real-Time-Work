@@ -1,0 +1,22 @@
+Software Development Life Cycle Stages - 
+
+1. Requirement Gathering
+   - Collect client needs and project requirements.
+
+2. Planning
+   - Estimate cost, time, resources, and project schedule.
+
+3. Design
+   - Create system design, database design, and architecture.
+
+4. Development
+   - Write and build the application code.
+
+5. Testing
+   - Find and fix bugs, verify application functionality.
+
+6. Deployment
+   - Release the application to users or production server.
+
+7. Maintenance
+   - Provide updates, bug fixes, and improvements after release.
