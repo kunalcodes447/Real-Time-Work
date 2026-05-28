@@ -1,0 +1,102 @@
+Database Design Fundamentals
+
+1. Entity Identification
+- Identified system entities from requirements
+- Converted business objects into database tables
+- Example entities:
+  Customer, Salon, Booking, Payment, Staff, Review
+
+Key Learning:
+Entity = Object that stores data and usually becomes a table
+
+
+2. Database Relationships
+
+One-to-One (1:1)
+- One record connected to one record
+- Example:
+  Customer → Wallet
+
+One-to-Many (1:M)
+- One parent connected to multiple child records
+- Example:
+  Customer → Bookings
+
+Many-to-Many (M:M)
+- Multiple records connected on both sides
+- Example:
+  Booking ↔ Services
+
+Key Learning:
+Many-to-Many relationships require junction tables
+
+
+3. Constraints and Keys
+
+Primary Key
+- Unique row identifier
+- Cannot be NULL
+
+Foreign Key
+- Creates relationship between tables
+
+Unique Constraint
+- Prevents duplicate values
+
+NOT NULL
+- Prevents empty values
+
+Composite Key
+- Multiple columns form unique key
+
+Key Learning:
+Constraints maintain data integrity
+
+
+4. Transactions and ACID Properties
+
+Transaction:
+- Group of operations executed as one unit
+
+ACID:
+
+Atomicity
+- All operations succeed or fail together
+
+Consistency
+- Database remains valid
+
+Isolation
+- Transactions do not interfere
+
+Durability
+- Data survives system failures
+
+Key Learning:
+Transactions ensure reliable operations
+
+
+5. Concurrency and Locks
+
+Concurrency:
+- Multiple users access data simultaneously
+
+Locks prevent:
+- Double booking
+- Incorrect updates
+- Dirty reads
+
+Shared Lock:
+- Multiple reads allowed
+
+Exclusive Lock:
+- Write operation lock
+
+Pessimistic Locking:
+- Lock before update
+
+Optimistic Locking:
+- Validate before commit
+
+Key Learning:
+Locks maintain consistency in concurrent systems
