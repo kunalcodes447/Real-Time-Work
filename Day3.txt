@@ -1,0 +1,36 @@
+Database Designing
+
+✓ Identified Required Databases for Project
+
+✓ Decided Database Per Microservice Approach
+
+✓ Identified Service Databases
+
+- Person Service Database
+  (Customer + Owner + Barber + Admin)
+
+- Salon Service Database
+
+- Booking Service Database
+
+- Payment Service Database
+
+- Notification Service Database
+
+- Review Service Database
+
+- Support/Ticket Service Database
+
+- Analytics/Report Database
+
+✓ Defined Responsibility of Each Database
+
+✓ Planned Service Boundaries
+
+✓ Started Database Relationship Planning
+
+✓ Prepared Foundation for Schema Design
+
+Project:
+Hair Salon Booking Platform
+Microservices Architecture
