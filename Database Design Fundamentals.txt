@@ -100,3 +100,141 @@ Optimistic Locking:
 
 Key Learning:
 Locks maintain consistency in concurrent systems
+
+
+
+6. SQL Joins
+
+Purpose:
+- Combine data from multiple tables using related columns
+
+Types of Joins:
+
+INNER JOIN
+- Returns matching records only
+
+LEFT JOIN
+- Returns all rows from left table
+- Matching rows from right table
+
+RIGHT JOIN
+- Returns all rows from right table
+- Matching rows from left table
+
+FULL JOIN
+- Returns all rows from both tables
+
+Key Learning:
+- FROM table becomes LEFT table
+- JOIN table becomes RIGHT table
+- Joins help combine normalized data
+
+
+7. Normalization and Denormalization
+
+Normalization:
+- Reduce duplicate data
+- Improve consistency
+
+1NF:
+- Atomic values only
+- No repeating groups
+
+2NF:
+- Remove partial dependency
+
+3NF:
+- Remove transitive dependency
+
+Denormalization:
+- Add controlled redundancy
+- Improve read performance
+
+Key Learning:
+- Normalization improves structure
+- Denormalization improves speed
+
+
+8. Database Objects
+
+Views:
+- Virtual tables created from queries
+- Simplify complex queries
+
+Stored Procedures:
+- Reusable SQL code blocks
+- Reduce repeated logic
+
+Triggers:
+- Automatically execute on events
+- INSERT / UPDATE / DELETE based actions
+
+Cascading:
+- Maintain relationships automatically
+- Example:
+  ON DELETE CASCADE
+
+Key Learning:
+- Database objects automate and simplify operations
+
+
+9. Pagination
+
+Purpose:
+- Retrieve data in smaller chunks
+
+Important Concepts:
+
+LIMIT
+- Number of rows to fetch
+
+OFFSET
+- Number of rows to skip
+
+Formula:
+
+OFFSET = (pageNumber - 1) × pageSize
+
+Example:
+
+LIMIT 10 OFFSET 20
+
+Meaning:
+- Skip first 20 rows
+- Return next 10 rows
+
+Key Learning:
+- Pagination improves performance and user experience
+
+
+10. Indexing Basics
+
+Purpose:
+- Speed up data retrieval
+
+Benefits:
+- Faster searches
+- Faster joins
+- Better pagination performance
+
+Common Types:
+
+Primary Index
+
+Unique Index
+
+Composite Index
+
+Important Learning:
+
+WHERE city='Mumbai'
+→ Index useful
+
+SELECT *
+FROM table
+
+→ Index usually not useful
+
+Key Learning:
+- Indexes reduce full table scans
+- Too many indexes can slow writes
